@@ -220,8 +220,8 @@ namespace XML
 								//int i = xnode.Attributes.Count;
 								// получаем атрибут name
 								XmlNode attr1 = xnode4.Attributes.GetNamedItem("name");
-								//if (attr1 != null)
-									//Console.Write("4");
+								if (attr1 != null)
+									Console.Write("4");
 								//Console.Write($" 4 => {attr1.Value}\t");
 								// получаем атрибут id
 								XmlNode attr2 = xnode4.Attributes.GetNamedItem("id");
@@ -240,7 +240,7 @@ namespace XML
 								//Console.Write($" 4 => {attr4.Value}\t");
 								//Заносим результат в список объектов MyOrgUnit
 								if (attr1 != null && attr2 != null && attr3 != null && attr4 != null)
-									f.ouList.Add(new MyOrgUnit() { name = attr1.Value, id = attr2.Value, parentid = attr3.Value, ouguid = new Guid(attr4.Value), oulevel = 1 });
+									f.ouList.Add(new MyOrgUnit() { name = attr1.Value, id = attr2.Value, parentid = attr3.Value, ouguid = new Guid(attr4.Value), oulevel = 4 });
 									
 							}
 						}
@@ -325,6 +325,31 @@ namespace XML
 			}
 			// Результаты
 			Console.WriteLine($"Всего организационных единиц: {f.ouList.Count()}");
+
+			//Console.WriteLine("\nExists: : {0}", f.ouList.Exists(x => x.oulevel == 1));
+			var item = f.ouList.FindAll(x => x.oulevel == 1);
+			Console.WriteLine($"Из них 1-го уровня: {item.Count()}");
+			item = f.ouList.FindAll(x => x.oulevel == 2);
+			Console.WriteLine($"Из них 2-го уровня: {item.Count()}");
+			item = f.ouList.FindAll(x => x.oulevel == 3);
+			Console.WriteLine($"Из них 3-го уровня: {item.Count()}");
+			item = f.ouList.FindAll(x => x.oulevel == 4);
+			Console.WriteLine($"Из них 4-го уровня: {item.Count()}");
+
+
+			/*
+			if (item != null)
+				foreach (var k in item)
+				{
+					int i = 0;
+					Console.WriteLine(k.name);
+					i++;
+				}
+			*/
+
+
+			//Console.WriteLine("\nFind: : {0} -  ", f.ouList.Find(x => x.oulevel == 1));
+			//Console.WriteLine("\nExists: : {0}", f2.personsList.Exists(x => x.lastname == "Острикова"&& x.firstname == "Ирина" ));
 			Console.WriteLine($"Всего сотрудников: {f2.personsList.Count()}");
 			Console.Read();
 		}

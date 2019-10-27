@@ -1,0 +1,7 @@
+D:\OSP-папа\ИУ5\Projects\BMSTU-XML\bin\Debug\BMSTU-XML.exe.config
+D:\OSP-папа\ИУ5\Projects\BMSTU-XML\bin\Debug\BMSTU-XML.exe
+D:\OSP-папа\ИУ5\Projects\BMSTU-XML\bin\Debug\BMSTU-XML.pdb
+D:\OSP-папа\ИУ5\Projects\BMSTU-XML\obj\Debug\BMSTU-XML.csprojAssemblyReference.cache
+D:\OSP-папа\ИУ5\Projects\BMSTU-XML\obj\Debug\BMSTU-XML.csproj.CoreCompileInputs.cache
+D:\OSP-папа\ИУ5\Projects\BMSTU-XML\obj\Debug\BMSTU-XML.exe
+D:\OSP-папа\ИУ5\Projects\BMSTU-XML\obj\Debug\BMSTU-XML.pdb

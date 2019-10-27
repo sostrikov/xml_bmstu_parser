@@ -1,0 +1,7 @@
+D:\git\26_10_2019-2\DynamicLinc\FooBar\bin\Debug\FooBar.exe.config
+D:\git\26_10_2019-2\DynamicLinc\FooBar\bin\Debug\FooBar.exe
+D:\git\26_10_2019-2\DynamicLinc\FooBar\bin\Debug\FooBar.pdb
+D:\git\26_10_2019-2\DynamicLinc\FooBar\obj\Debug\FooBar.csprojAssemblyReference.cache
+D:\git\26_10_2019-2\DynamicLinc\FooBar\obj\Debug\FooBar.csproj.CoreCompileInputs.cache
+D:\git\26_10_2019-2\DynamicLinc\FooBar\obj\Debug\FooBar.exe
+D:\git\26_10_2019-2\DynamicLinc\FooBar\obj\Debug\FooBar.pdb
